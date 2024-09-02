@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widthco, initial-scale=1.0">
+    <title>medium</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /*
+      .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .subnav {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .subnav .subnavbtn {
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .subnav:hover .subnavbtn {
+          background-color: red;
+        }
+        
+        .subnav-content {
+          display: none;
+          position: absolute;
+          left: 0;
+          background-color: red;
+          width: 100%;
+          z-index: 1;
+        }
+        
+        .subnav-content a {
+          float: left;
+          color: white;
+          text-decoration: none;
+        }
+        
+        .subnav-content a:hover {
+          background-color: #eee;
+          color: black;
+        }
+        
+        .subnav:hover .subnav-content {
+          display: block;
+        }
+        */
+        
+        .rcorners1 {
+              border-radius: 120px;
+              /* background: rgb(140, 226, 129);*/
+              padding: 20px;
+              width: 350px;
+              /*height: 400px; */
+              margin-left: 180px;
+              /*float: right; */
+          }
+      
+          .rcorners2 {
+              border-radius: 120px;
+              /* background: rgb(140, 226, 129);*/
+              padding: 20px;
+              /*width: 350px;
+              /*height: 400px; */
+              /*margin-right: 50px; */
+              /*float: right; */
+          }
+
+          .box {
+              border-radius: 30px;
+              background-color: rgb(184, 255, 184);
+              padding:20px;
+              margin: 20px;
+              opacity: 0.8;
+          }
+
+          .box2 {
+                width:400px;
+                border-radius: 30px;
+                background-color: rgb(246, 250, 27);
+                padding:20px;
+                margin-left: 50px;
+                opacity: 0.8;
+          }
+
+
+
+
+          .btn {
+              border-radius: 60px;
+
+          }  
+          body {
+            background-image: url('./mountainbackground.jpg');
+            background-size: cover;
+             }   
+  </style>
+</head>
+<body>
+     
+    <header>
+        <div style="text-align:center"><img width="100" src="./Logo/cart.jpg" alt="Logo" ></div>
+        <nav class="navbar navbar-expand-sm navbar-light mb-3 navbar-primary bg-info">
+            <div class="container">
+                <a class="navbar-band" href="#"></a>
+                <ul class="navbar-nav text-white" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">About Us
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./Welcome to eShopFruit.html" class="dropdown-item">Wecome to eShopFruit</a>                           
+                         <a href="./Business.html" class="dropdown-item">Business & Marketing</a>   
+                         <a href="./SCM.html" class="dropdown-item">Supply Chain & Logistics</a>   
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Fruit Products
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./W-Apple.html" class="dropdown-item">Apple</a>                           
+                         <a href="./W-Orange.html" class="dropdown-item">Orange</a>   
+                         <a href="./W-Papaya.html" class="dropdown-item">Papaya</a>   
+                         <a href="./W-Pear.html" class="dropdown-item">Pear</a> 
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Gift Hampers
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./To_small.html" class="dropdown-item">Small</a>                           
+                         <a href="./To_medium.html" class="dropdown-item">Medium</a>   
+                         <a href="./To_deluxe.html" class="dropdown-item">Deluxe</a>   
+                         <a href="./To_custommade.html" class="dropdown-item">Custom made</a> 
+                        </div>
+    
+                    </li>
+                    <li class="nav-item dropdown">  
+                        <a href="./Kei_Healthy Fresh Juice.html" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Healthy Fresh Juice
+                        </a> 
+                        <div class="dropdown-menu">
+                        <a href="./Kei_Healthy Fresh Juice.html" class="dropdown-item">Healthy Fresh Juice</a>
+                         <a href="./apple-juice.html" class="dropdown-item">Apple Juice</a>                           
+                         <a href="./carrot-juice.html" class="dropdown-item">Carrot Juice</a>   
+                         <a href="./mixed-berry-juice.html" class="dropdown-item">Mixed-berry Juice</a>   
+                         <a href="./orange-juice.html" class="dropdown-item">Orange Juice</a> 
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./To_contact.html" style="color:white">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Cart.html" style="color:white">Cart</a>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+
+              <h1 class="display-3 text-center my-4">Fresh Fruit Gift Hamper</h1>
+    </header>
+    <br>
+    <div class="row">
+        <div class="col-sm-6"; >
+            <!--style="background-color: green;" -->
+            
+            <img class="rcorners1" src="./images_To/hamper M1.jpg" >
+            <br>
+            <div class="box">
+                    <h2> Product No: M-101</h2><br>
+                    <h2> Assorted fruit small hamper</h2>
+                    <br>
+                    <h3> HK$ 1200 each</h3>
+                    <h3>Product Description</h3>
+                    <br>
+                    <p style="font-size: 20px;"> Assorted fresh fruites in medium ratten or bamboo basket. These fruits are juicy, crunchy and undeniably healthy. 
+                        Not just for snacking, these are welcome in a smoothie, pie, fruit salad, or punch. 
+                    </p>
+            </div>
+        </div>
+             <br>
+        <div class="col-sm-6"; >
+                <!--style="background-color: green;" -->
+                
+                <img class="rcorners1" src="./images_To/hamper M2.jpg" >
+                <br>
+            <div class="box">
+                    <h2>  Product No: M-102 </h2><br>
+                    <h2>  Assorted fruit medium hamper</h2>
+                    <br>
+                    <h3> HK$ 1500 each</h3>
+                    <h3>Product Description</h3>
+                    <br>
+                    <p style="font-size: 20px;"> Assorted fresh fruites in small ratten or bamboo basket. These fruits are juicy, crunchy and undeniably healthy. 
+                        Not just for snacking, these are welcome in a smoothie, pie, fruit salad, or punch. 
+                    </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6"; >
+                   <!--style="background-color: green;" -->
+                   
+                   <img class="rcorners1" src="./images_To/hamper M3.jpg" >
+                   <br>
+            <div class="box">
+                        <h2>  Product No: M-103 </h2>><br>
+                        <h2>  Assorted fruit medium hamper</h2>
+                       <br>
+                       <h3> HK$ 1600 each</h3>
+                       <h3>Product Description</h3>
+                       <br>
+                       <p style="font-size: 20px;"> Assorted fresh fruites in medium ratten or bamboo basket. 
+                       </p>
+            </div>
+        </div>
+        <div class="col-sm-6"; >
+                    <!--style="background-color: green;" -->
+                    
+                    <img class="rcorners1" src="./images_To/hamper M4.jpg" >
+                    <br>
+            <div class="box">
+                        <h2>  Product No: S-104 </h2><br>
+                        <h2>  Assorted fruit medium hamper</h2>
+                        <br>
+                        <h3> HK$ 1800 each</h3>
+                        <h3>Product Description</h3>
+                        <br>
+                        <p style="font-size: 20px;"> Assorted fresh fruites in medium ratten or bamboo basket. 
+                        </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="box2">
+
+        <h3>For more details to order</h3>
+        <button class="btn btn-success btn-lg" type="button">  <!-- apply style to button -->
+            <i class="fa fa-user"></i>
+            <a class="frcolor" href="To_contact.html" target="_blank" style="color:white">Please conact us
+            </a>
+        </button>
+
+    <br>
+
+    </div>           
+    <br>
+    <br>
+        
+        <h3 style="text-align: center;">You May also like this:</h3>
+        
+    <br>
+    <br>
+
+<div class="row">
+    <div class="col" style="text-align: center;">
+        <img class="rcorners2" src="./images_To/pear.jpg" >
+        <br>
+            <button class="btn btn-success btn-lg" type="button">  <!-- apply style to button -->
+                <i class="fa fa-user"></i> Pear</button>
+    </div>
+    <div class="col" style="text-align: center;">
+        <img class="rcorners2" src="./images_To/papaya.jpg" > 
+        <br>
+        <button class="btn btn-success btn-lg" type="button" >  <!-- apply style to button -->
+            <i class="fa fa-user"></i> Papaya</button>
+    </div>
+    <div class="col"style="text-align: center;" >
+        <img class="rcorners2" src="./images_To/orange.jpg" > 
+        <br>
+        <button class="btn btn-success btn-lg" type="button">  <!-- apply style to button -->
+            <i class="fa fa-user"></i> Orange</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>    
+</body>
+</html>

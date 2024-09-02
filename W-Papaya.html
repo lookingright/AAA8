@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papaya</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+            .frcolor {
+                color:white;
+            
+            }
+
+            .rcorners1 {
+                border-radius: 120px;
+                /* background: rgb(140, 226, 129);*/
+                padding: 20px;
+                width: 350px;
+                /*height: 400px; */
+                margin-left: 180px;
+                /*float: right; */
+            }
+        
+            .rcorners2 {
+                border-radius: 120px;
+                /* background: rgb(140, 226, 129);*/
+                padding: 20px;
+                /*width: 350px;
+                /*height: 400px; */
+                /*margin-right: 50px; */
+                /*float: right; */
+            }
+
+            .box {
+                border-radius: 30px;
+                background-color: rgb(184, 255, 184);
+                padding:20px;
+                margin-right: 20px;
+                opacity: 0.8;
+            }
+
+            .btn {
+                border-radius: 60px;
+
+            }
+
+    </style>   
+
+</head>
+
+<body>
+
+    <header>
+        <div style="text-align:center"><img width="100" src="./Logo/cart.jpg" alt="Logo" ></div>
+        <nav class="navbar navbar-expand-sm navbar-light mb-3 navbar-primary bg-info">
+            <div class="container">
+                <a class="navbar-band" href="#"></a>
+                <ul class="navbar-nav text-white" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">About Us
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./Welcome to eShopFruit.html" class="dropdown-item">Wecome to eShopFruit</a>                           
+                         <a href="./Business.html" class="dropdown-item">Business & Marketing</a>   
+                         <a href="./SCM.html" class="dropdown-item">Supply Chain & Logistics</a>   
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Fruit Products
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./W-Apple.html" class="dropdown-item">Apple</a>                           
+                         <a href="./W-Orange.html" class="dropdown-item">Orange</a>   
+                         <a href="./W-Papaya.html" class="dropdown-item">Papaya</a>   
+                         <a href="./W-Pear.html" class="dropdown-item">Pear</a> 
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item dropdown">  
+                        <a href="#" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Gift Hampers
+                        </a> 
+                        <div class="dropdown-menu">
+                         <a href="./To_small.html" class="dropdown-item">Small</a>                           
+                         <a href="./To_medium.html" class="dropdown-item">Medium</a>   
+                         <a href="./To_deluxe.html" class="dropdown-item">Deluxe</a>   
+                         <a href="./To_custommade.html" class="dropdown-item">Custom made</a> 
+                        </div>
+    
+                    </li>
+                    <li class="nav-item dropdown">  
+                        <a href="./Kei_Healthy Fresh juice.html" class="nav-link dropdow-toggle"
+                        data-toggle="dropdown" style="color:white">Healthy Fresh Juice</a> 
+                        
+                        <div class="dropdown-menu">
+                        <a href="./Kei_Healthy Fresh Juice.html" class="dropdown-item">Healthy Fresh Juice</a>
+                         <a href="./apple-juice.html" class="dropdown-item">Apple Juice</a>                           
+                         <a href="./carrot-juice.html" class="dropdown-item">Carrot Juice</a>   
+                         <a href="./mixed-berry-juice.html" class="dropdown-item">Mixed-berry Juice</a>   
+                         <a href="./orange-juice.html" class="dropdown-item">Orange Juice</a> 
+                        </div>
+    
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./To_contact.html" style="color:white">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Cart.html" style="color:white">Cart</a>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+        <br>
+        <div class="row">
+            <div class="col-sm-6" >
+                <!--style="background-color: green;" -->
+                
+                <img class="rcorners1" src="images_Will/im14.jpg" >
+
+
+            </div>
+            <div class="col-sm-6" >
+                <!--style="background-color: pink;"-->
+
+                <div class="box"> 
+                <br>
+                <h2> Product: Papaya</h2>
+                <br>
+                <h3> Today's Special Price </h3>
+                <h3> HK$ 21 each</h3>
+
+                <script>
+                    function submitValue() {
+                      // Get the value entered by the user
+                      var input = document.getElementById('value-input');
+                      var value = input.value;
+                      
+                      // Store the value in localStorage
+                      localStorage.setItem('Papaya', value);
+                      
+                      // Redirect to the second page
+                      window.location.href = './Cart.html';
+                    }
+                  </script>
+                <br>
+    
+                <br>
+                  <h5>Enter order quantity:</h5>
+                  <input type="text" id="value-input">
+                  <!-- <input type="number" id="value-input"> -->
+                   <br>
+                   <br>
+                  <button onclick="submitValue()">Add to shopping cart</button>
+                  <br>
+                  <br>
+                  <hr>
+
+                    <div>
+                        <h3>Product Description</h3>
+                        <br>
+                        <p style="font-size: 20px;"> 
+                            Papaya takes about 130-150 days from flowering to harvesting. 
+                            If there is sufficient sunshine and warm climate in this growth period, 
+                            in summer and autumn, the sugar content of papaya is generally 
+                            above 12 degrees, or even up to 14, 15 degrees, the taste and 
+                            flavor are also the best.
+
+                            Papayas are unique in being only one species of plant. 
+                            Of this there are two variations. The papaya has delightfully sweet, 
+                            red or orange flesh, while the yellow pawpaw and the other has 
+                            distinctive yellow flesh. 
+                            They are also available as green papayas - unripe and used in a range of dishes. 
+                            Fresh Fruits imports Maradol, Sunrise, and Caribbean Red papayas which usually 
+                            come from Mexico and Belize.
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <br>
+        <br>
+        <h3 style="text-align: center;">You May also like this:</h3>
+        <br>
+        <br>
+    
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <img class="rcorners2" src="images_Will/im15.jpg" >
+            <br>
+                <button class="btn btn-success btn-lg" type="button">  <!-- apply style to button -->
+                    <i class="fa fa-user"></i>
+                    <a class="frcolor" href="W-Orange.html" target="_blank">Orange
+                    </a>
+                </button>
+        </div>
+        <div class="col" style="text-align: center;">
+            <img class="rcorners2" src="images_Will/im17.jpg" > 
+            <br>
+            <button class="btn btn-success btn-lg" type="button" >  <!-- apply style to button -->
+                <i class="fa fa-user"></i> 
+                <a class="frcolor" href="W-Apple.html" target="_blank">Apple
+                </a>
+            </button>
+        </div>
+        <div class="col"style="text-align: center;" >
+            <img class="rcorners2" src="images_Will/im11.jpg" > 
+            <br>
+            <button class="btn btn-success btn-lg" type="button">  <!-- apply style to button -->
+                <i class="fa fa-user"></i>
+                <a class="frcolor" href="W-Pear.html" target="_blank">Pear
+                </a>
+            </button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>    
+</body>
+</html>

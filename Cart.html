@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widthco, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <h1 class="display-3 text-center my-4">Shopping Cart</h1>
+        <hr>
+    </header>
+
+    <div style="text-align:center"><img width="100" src="./Logo/cart.jpg" alt="Logo" ></div>
+    <nav class="navbar navbar-expand-sm navbar-light mb-3 navbar-primary bg-info">
+        <div class="container">
+            <a class="navbar-band" href="#"></a>
+            <ul class="navbar-nav text-white" >
+                <li class="nav-item">
+                    <a class="nav-link" href="./Index.html" style="color:white">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">  
+                    <a href="#" class="nav-link dropdow-toggle"
+                    data-toggle="dropdown" style="color:white">About Us
+                    </a> 
+                    <div class="dropdown-menu">
+                     <a href="./Welcome to eShopFruit.html" class="dropdown-item">Wecome to eShopFruit</a>                           
+                     <a href="./Business.html" class="dropdown-item">Business & Marketing</a>   
+                     <a href="./SCM.html" class="dropdown-item">Supply Chain & Logistics</a>   
+                    </div>
+
+                </li>
+
+                <li class="nav-item dropdown">  
+                    <a href="#" class="nav-link dropdow-toggle"
+                    data-toggle="dropdown" style="color:white">Fruit Products
+                    </a> 
+                    <div class="dropdown-menu">
+                     <a href="./W-Apple.html" class="dropdown-item">Apple</a>                           
+                     <a href="./W-Orange.html" class="dropdown-item">Orange</a>   
+                     <a href="./W-Papaya.html" class="dropdown-item">Papaya</a>   
+                     <a href="./W-Pear.html" class="dropdown-item">Pear</a> 
+                    </div>
+
+                </li>
+
+                <li class="nav-item dropdown">  
+                    <a href="#" class="nav-link dropdow-toggle"
+                    data-toggle="dropdown" style="color:white">Gift Hampers
+                    </a> 
+                    <div class="dropdown-menu">
+                     <a href="./To_small.html" class="dropdown-item">Small</a>                           
+                     <a href="./To_medium.html" class="dropdown-item">Medium</a>   
+                     <a href="./To_deluxe.html" class="dropdown-item">Deluxe</a>   
+                     <a href="./To_custommade.html" class="dropdown-item">Custom made</a> 
+                    </div>
+
+                </li>
+                <li class="nav-item dropdown">  
+                    <a href="./Kei_Healthy Fresh Juice.html" class="nav-link dropdow-toggle"
+                    data-toggle="dropdown" style="color:white">Healthy Fresh Juice
+                    </a> 
+                    <div class="dropdown-menu">
+                    <a href="./Kei_Healthy Fresh Juice.html" class="dropdown-item">Healthy Fresh Juice</a>
+                     <a href="./apple-juice.html" class="dropdown-item">Apple Juice</a>                           
+                     <a href="./carrot-juice.html" class="dropdown-item">Carrot Juice</a>   
+                     <a href="./mixed-berry-juice.html" class="dropdown-item">Mixed-berry Juice</a>   
+                     <a href="./orange-juice.html" class="dropdown-item">Orange Juice</a> 
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./To_contact.html" style="color:white">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Cart.html" style="color:white">Cart</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Shopping Cart</h1>
+
+    <br>
+    <br>
+    <p id="Apple">Number of Apple = </p>
+    <p id="TotalApple">Apple Total = $</p>
+    <p id="Orange">Number of Orange = </p>
+    <p id="TotalOrange">Orange Total = $</p>
+    <p id="Papaya">Number of Papaya = </p>
+    <p id="TotalPapaya">Papaya Total = $</p>
+    <p id="Pear">Number of Pear = </p>
+    <p id="TotalPear">Pear Total = $</p>
+    <p id="AppleJuice">Number of Apple Juice = </p>
+    <p id="TotalAppleJuice">Apple Juice Total = $</p>
+    <p id="CarrotJuice">Number of Carrot Juice = </p>
+    <p id="TotalCarrotJuice">Carrot Juice Total = $</p>
+    <p id="BerryJuice">Number of Berry Juice = </p>
+    <p id="TotalBerryJuice">Berry Juice Total = $</p>
+    <p id="OrangeJuice">Number of Orange Juice = </p>
+    <p id="TotalOrangeJuice">Orange Juice Total = $</p>
+    <p id="Total">Total fruit purchase = $</p>
+    <br>
+    <script>
+
+        var ApplePrice = 10;
+        var OrangePrice = 8;
+        var PapayaPrice = 21;
+        var PearPrice = 8;
+        var AppleJuicePrice = 5;
+        var CarrotJuicePrice = 9;
+        var BerryJuicePrice = 12;
+        var OrangeJuicePrice = 6;
+
+        var valueApple = localStorage.getItem('Apple');
+        var valueOrange = localStorage.getItem('Orange');
+        var valuePapaya = localStorage.getItem('Papaya');
+        var valuePear = localStorage.getItem('Pear');
+        var valueAppleJuice = localStorage.getItem('AppleJuice');
+        var valueCarrotJuice = localStorage.getItem('CarrotJuice');
+        var valueBerryJuice = localStorage.getItem('BerryJuice');
+        var valueOrangeJuice = localStorage.getItem('OrangeJuice');
+        var TotalPurchase = localStorage.getItem('Total');
+
+        var AppleTotal = ApplePrice*valueApple;
+        var OrangeTotal = OrangePrice*valueOrange;
+        var PapayaTotal = PapayaPrice*valuePapaya;
+        var PearTotal = PearPrice*valuePear;
+        var AppleJuiceTotal = AppleJuicePrice*valueAppleJuice;
+        var CarrotJuiceTotal = CarrotJuicePrice*valueCarrotJuice;
+        var BerryJuiceTotal = BerryJuicePrice*valueBerryJuice;
+        var OrangeJuiceTotal = OrangeJuicePrice*valueOrangeJuice;
+        var TotalPurchase = AppleTotal+OrangeTotal+PapayaTotal+PearTotal+AppleJuiceTotal
+                            +CarrotJuiceTotal+BerryJuiceTotal+OrangeJuiceTotal;
+
+                            
+        // System.out.println(roundAvoid(TotalPurchase, 2));
+        // Precision.round(TotalPurchase, 3);
+
+        document.getElementById("Apple").innerHTML += valueApple;
+        document.getElementById("Orange").innerHTML += valueOrange;
+        document.getElementById("Papaya").innerHTML += valuePapaya;
+        document.getElementById("Pear").innerHTML += valuePear;
+        document.getElementById("AppleJuice").innerHTML += valueAppleJuice;
+        document.getElementById("CarrotJuice").innerHTML += valueCarrotJuice;
+        document.getElementById("BerryJuice").innerHTML += valueBerryJuice;
+        document.getElementById("OrangeJuice").innerHTML += valueOrangeJuice;
+        
+        document.getElementById("TotalApple").innerHTML += AppleTotal;
+        document.getElementById("TotalOrange").innerHTML += OrangeTotal;
+        document.getElementById("TotalPapaya").innerHTML += PapayaTotal;
+        document.getElementById("TotalPear").innerHTML += PearTotal;
+        document.getElementById("TotalAppleJuice").innerHTML += AppleJuiceTotal;
+        document.getElementById("TotalCarrotJuice").innerHTML += CarrotJuiceTotal;
+        document.getElementById("TotalBerryJuice").innerHTML += BerryJuiceTotal;
+        document.getElementById("TotalOrangeJuice").innerHTML += OrangeJuiceTotal;
+        document.getElementById("Total").innerHTML += TotalPurchase;
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>    
+
+</body>
+</html>
